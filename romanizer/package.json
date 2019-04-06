@@ -3,13 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "watch": {
+	"test": "romanizer*js"
+  },
   "scripts": {
-    "test": "tape romanizer.test.js | tap-spec"
+    "test": "tape romanizer.test.js | tap-spec",
+    "watch": "npm-watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "npm-watch": "^0.6.0",
     "tap-spec": "^5.0.0",
     "tape": "^4.10.1"
   }

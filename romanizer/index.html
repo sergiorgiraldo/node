@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Romanizer</title>
+    <script src="romanizer.js"></script>
+    <script type="text/javascript">
+        function el(which){
+            return document.getElementById(which);
+        }
+    </script>
+</head>
+<body>
+    ARABIC:
+    <input type="text" name="arabic" id="arabic" />
+    <br/><br/>
+    <button onclick="javascript:el('roman').value=romanizer(parseInt(el('arabic').value), 10);">CONVERT</button>    
+    <br/><br/>
+    ROMAN:
+    <input type="text" name="roman" id="roman" />
+</body>
+</html>
